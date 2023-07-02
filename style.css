@@ -289,7 +289,7 @@ li,buttom,label,input,p{
 }
 
 
-@media (max-width:921px){
+@media (max-width:888px){
     .nav{
         justify-content: center
     }
