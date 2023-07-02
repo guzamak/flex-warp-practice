@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 100
+}
+
+
+li,buttom,label,input,p{
+    font-size: 1.4rem;
+}
+.header{
+    width: 100vw;
+    background: rgba(0,0,0,1.00);
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+    width: 90vw;
+    color:white;
+    align-items: center;
+    padding:2rem 10rem;
+    flex-wrap: wrap;
+}
+.nav .logo{
+    flex:1 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex: 1 1 20rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav ul a {
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.section {
+    background: linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.00)),url("img/landing-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section h3{
+    margin: 3rem;
+}
+
+.section button{
+    background: rgba(72,104,137,1.00);
+    color: white;
+    padding: 1.5rem 3rem ;
+    width: auto;
+    border: 1px;
+    transition: all 1s ease-in;
+}
+.section button:hover{
+    background: rgba(49,72,95,1.00);
+    font-size: 2rem;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.00)),url("img/new-york-page.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2 div {
+    margin: 10vw;
+    z-index:1;
+}
+
+.section2 div h2{
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.section2 div h3{
+    font-weight: 400;
+    background: linear-gradient(#131c27,#663b34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0.00);
+}
+.cloud{
+    position: absolute;
+    top:0%;
+    right: 0% ;
+    z-index:0;
+}
+.movingcloud1{
+    animation: cloudmove 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both
+}
+.movingcloud2{
+    top:10%;
+    z-index:-2;
+    opacity: 0.75;
+    animation: cloudmove 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both
+}
+
+@keyframes cloudmove {
+    0%{
+        transform: translate(0%,0%)
+    }
+    50%{
+        transform: translate(2%,-2%)
+    }
+    100%{
+        transform: translate(0%,0%)
+        
+    }
+}
+
+
+.section3 .header{
+    background: rgba(26,26,26,1.00);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+}
+.section3 .header h3{
+    font-size: 1.2rem;
+    padding-top: 3rem;
+}
+
+.section3 .allbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10rem 2rem; 
+}
+.section3 .allbox .box{
+    shadow: 0px 5px 5px;
+    flex: 1 1 20rem;
+    margin: 5rem;
+    border: hidden;
+    text-align: center;
+    border-radius: 2rem 4rem 1rem 1rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    
+}
+.section3 .allbox .box .icon{
+    padding: 4rem 0;
+    background: rgba(0,0,0,1.00);
+}
+.section3 .allbox .box img{
+    height: 8rem;
+}
+.section3 .allbox .box .text{
+    padding: 6rem 0;
+    background-color: rgba(255,255,255,1.00)
+}
+
+.section4{
+    background: linear-gradient(360deg,rgba(0,0,0,0.75),rgba(0,0,0,0.0)),
+        linear-gradient(180deg,rgba(0,0,0,0.50),rgba(0,0,0,0.0)),url("img/contact-mountain.png");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.section4 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.25);
+    background: rgba(0,0,0,0.8);
+    width: 40vw;
+    padding: 2rem 1rem 0 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    color:white;
+}
+.section4 form div{
+    padding: 1rem;
+}
+.section4 form h1{
+    padding: 2rem 0;
+    text-decoration: underline;
+    text-align: center;
+}
+.section4 form div label{
+    padding-right: 1rem;
+}
+.section4 form>input{
+    margin-top: 2rem;
+    background: rgba(72,104,137,1.00);
+    color: white;
+    border: 1px;
+    padding: 1rem 0;
+    width: 100vw;
+}
+
+.section4 form div>input{
+    width: 100%
+}
+
+.section4 form div>input:focus{
+    outline: none;
+}
+
+
+.contact{
+    background: rgba(0,0,0,1.00);
+    min-height: 8vh;
+    display: flex;
+    color:white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+.contact a{
+    text-decoration: none;
+    color:white;
+}
+.contact a h1{
+    font-size: 1rem;
+}
+.contact div{
+    transform: scale(0.75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 1 30rem;
+}
+
+
+@media (max-width:921px){
+    .nav{
+        justify-content: center
+    }
+   .nav .logo{
+        text-align: center;
+        padding-bottom: 1rem;
+    }    
+ 
+}
+
+@media (max-width:422px){
+    .contact{
+        justify-content: center
+    }
+    .contact h1{
+        text-align: center;
+    }
+}
+@media (max-width:600px){
+    .section4 form{
+        width: 100vw
+    }
+}
+
+
